@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { Home, Building2, Layers, Wrench } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
+    title: "Квартиры и дома",
+    description: "Укладка паркета, ламината, плитки и других покрытий в жилых помещениях. Работаем аккуратно и чисто.",
     icon: Home,
   },
   {
     title: "Коммерческие объекты",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "Офисы, рестораны, торговые залы — обеспечиваем износостойкое покрытие, которое выдержит высокую нагрузку.",
+    icon: Building2,
   },
   {
-    title: "Дизайн интерьеров",
+    title: "Наливные полы",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "Эпоксидные и полиуретановые наливные полы для промышленных и жилых объектов. Идеально ровная поверхность.",
+    icon: Layers,
   },
   {
-    title: "Градостроительство",
+    title: "Ремонт и реставрация",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Циклёвка, шлифовка, замена отдельных элементов — вернём вашему полу первоначальный вид без полного демонтажа.",
+    icon: Wrench,
   },
 ]
 
@@ -59,12 +59,12 @@ export function Expertise() {
         <div className="max-w-3xl mb-20">
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Мастерство</HighlightedText>, проверенное
             <br />
-            практикой
+            сотнями объектов
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Более 10 лет укладываем полы в квартирах, офисах и торговых центрах по всей России. Результат — покрытие, которое служит долго и выглядит безупречно.
           </p>
         </div>
 
